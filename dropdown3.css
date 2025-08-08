@@ -108,8 +108,9 @@
   top: 100%;         /* Drop directly below parent */
   left: 0;           /* Align to left edge of <a> */
   transform: translateX(0); /* Prevent shift */
-  background: rgba(255, 255, 255, 0.1);
-  backdrop-filter: blur(4px);
+  background: rgba(255, 255, 255, 0.15); /* glass tint */
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px); /* Brave/Chrome/Safari */
   padding: 0.25rem 0;
   list-style: none;
   margin: 0;
