@@ -129,3 +129,14 @@ document.addEventListener("DOMContentLoaded", function () {
     document.body.classList.toggle('scrolled', window.scrollY > 20);
   });
 });
+
+/* -------------------------
+   Force repaint/reflow on window load to fix initial overflow
+------------------------- */
+window.addEventListener('load', () => {
+  // Force repaint by toggling a transform property
+  document.body.style.transform = 'translateZ(0)';
+  setTimeout(() => {
+    document.body.style.transform = '';
+  }, 50);
+});
