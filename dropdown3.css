@@ -31,7 +31,8 @@
       position: sticky;
       top: 0;
       z-index: 100;
-      font-size: 1.4rem;
+      font-size: 1.2rem;
+	  transform: none; /* remove any transform-based scaling */
     }
 
     .navbar {
