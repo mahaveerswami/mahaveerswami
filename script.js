@@ -1,5 +1,17 @@
 document.addEventListener("DOMContentLoaded", function () {
   /* -------------------------
+     Auto-adjust body padding to match nav height
+  ------------------------- */
+  function setBodyPadding() {
+    const nav = document.querySelector("nav");
+    if (nav) {
+      document.body.style.paddingTop = nav.offsetHeight + "px";
+    }
+  }
+  window.addEventListener("resize", setBodyPadding);
+  setBodyPadding();
+
+  /* -------------------------
      Toggle Mobile Menu
   ------------------------- */
   const menu = document.querySelector(".menu");
