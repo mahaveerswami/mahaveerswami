@@ -2,6 +2,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Playwrite+PL&display=swap');
 
 
+	html, body {
+	margin: 0;
+	padding: 0;
+	overflow-x: hidden;
+}
+
     * {
       margin: 0;
       padding: 0;
@@ -23,16 +29,17 @@
            }
 
     nav {
-      background: rgba(255, 255, 255, 0.15);
-      backdrop-filter: blur(10px);
-      -webkit-backdrop-filter: blur(10px);
-      border-bottom: 1px solid rgba(255, 255, 255, 0.2);
-      padding: 0.1rem 1rem;
-      position: sticky;
-      top: 0;
-      z-index: 100;
-      font-size: 1.2rem;
-	  transform: none; /* remove any transform-based scaling */
+		width: 100%;
+		background: rgba(255, 255, 255, 0.15);
+      	backdrop-filter: blur(10px);
+      	-webkit-backdrop-filter: blur(10px);
+      	border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+      	padding: 0.1rem 1rem;
+      	position: sticky;
+      	top: 0;
+      	z-index: 100;
+      	font-size: 1.2rem;
+	  	transform: none; /* remove any transform-based scaling */
     }
 
     .navbar {
