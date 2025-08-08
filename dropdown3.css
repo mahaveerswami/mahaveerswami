@@ -738,13 +738,3 @@ li.has-dropdown {
     font-size: 1rem;
   }
 }
-
-/* Apply scaling only on larger screens */
-@media screen and (min-width: 1024px) {
-  body {
-    transform: scale(0.7);              /* 90% size */
-    transform-origin: top center;       /* keep it centered */
-    width: calc(100% / 0.7);             /* prevent horizontal scroll */
-  }
-}
-
