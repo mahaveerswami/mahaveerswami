@@ -764,7 +764,9 @@ li.has-dropdown {
   @supports (-webkit-appearance: none) and (not (-moz-appearance: none)) {
     .dropdown {
       background: rgba(205, 210, 191, 0.5) !important; 
-      backdrop-filter: none !important;  /* Disable blur */
+      /* Keep blur enabled */
+      backdrop-filter: blur(10px) !important;
+      -webkit-backdrop-filter: blur(10px) !important;
       box-shadow: 0 2px 6px rgba(0,0,0,0.15) !important; /* subtle shadow */
     }
   }
