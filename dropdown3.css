@@ -82,7 +82,7 @@
 
     .menu a {
       text-decoration: none;
-      color: #fff;
+      color: #e9505f !important;
       padding: 0.1rem 0.75rem;
       border-radius: 0;
       display: inline-block;
