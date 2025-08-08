@@ -758,3 +758,15 @@ li.has-dropdown {
     -webkit-backdrop-filter: blur(10px) !important;
   }
 }
+
+@media (min-width: 769px) {
+  /* Target Chromium browsers like Chrome and Brave */
+  @supports (-webkit-appearance: none) and (not (-moz-appearance: none)) {
+    .dropdown {
+      background: #d2d2ad !important; 
+      backdrop-filter: none !important;  /* Disable blur */
+      box-shadow: 0 2px 6px rgba(0,0,0,0.15) !important; /* subtle shadow */
+    }
+  }
+}
+
