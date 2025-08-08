@@ -21,6 +21,7 @@
        
       background: linear-gradient(90deg,rgba(211, 211, 173, 1) 0%, rgba(190, 197, 177, 1) 50%, rgba(211, 211, 173, 1) 100%);
       min-height: 100vh;
+      
     }
     
     .devanagari-text {
@@ -35,9 +36,10 @@
       	-webkit-backdrop-filter: blur(10px);
       	border-bottom: 1px solid rgba(255, 255, 255, 0.2);
       	padding: 0.1rem 1rem;
-      	position: sticky;
+      	position: fixed;
       	top: 0;
-      	z-index: 100;
+		left: 0;
+      	z-index: 2000;
       	font-size: 1.2rem;
 	  	transform: none; /* remove any transform-based scaling */
     }
