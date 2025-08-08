@@ -139,4 +139,12 @@ window.addEventListener('load', () => {
   setTimeout(() => {
     document.body.style.transform = '';
   }, 50);
+
+  // Recalculate body padding after everything loads (with slight delay)
+  setTimeout(() => {
+    const nav = document.querySelector("nav");
+    if (nav) {
+      document.body.style.paddingTop = nav.offsetHeight + "px";
+    }
+  }, 100);
 });
