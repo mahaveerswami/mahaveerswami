@@ -763,7 +763,7 @@ li.has-dropdown {
   /* Target Chromium browsers like Chrome and Brave */
   @supports (-webkit-appearance: none) and (not (-moz-appearance: none)) {
     .dropdown {
-      background: rgba(205, 210, 191, 0.8) !important; 
+      background: rgba(205, 210, 191, 0.9) !important; 
       /* Keep blur enabled */
       backdrop-filter: blur(10px) !important;
       -webkit-backdrop-filter: blur(10px) !important;
