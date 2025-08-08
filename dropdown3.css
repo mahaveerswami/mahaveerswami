@@ -111,7 +111,7 @@
   top: 100%;         /* Drop directly below parent */
   left: 0;           /* Align to left edge of <a> */
   transform: translateX(0); /* Prevent shift */
-  background: rgba(255, 255, 255, 0.15); /* glass tint */
+  background: rgba(255, 255, 255, 0.25); /* glass tint */
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px); /* Brave/Chrome/Safari */
   padding: 0.25rem 0;
