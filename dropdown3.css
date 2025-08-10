@@ -1,5 +1,7 @@
 @import url(https://fonts.googleapis.com/css?family=Tiro+Devanagari+Hindi&display=swap);
 @import url('https://fonts.googleapis.com/css2?family=Playwrite+PL&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Devanagari&display=swap');
+
 
 
 	html, body {
@@ -16,7 +18,7 @@
     }
 
     body {
-      font-family: 'Tiro Devanagari Hindi', sans-serif;
+      font-family: 'Tiro Devanagari Hindi', 'Noto Sans Devanagari', sans-serif;
       /* background: linear-gradient(135deg, #c3cfe2, #c3e2e1);
        * background: linear-gradient(90deg,rgba(211, 211, 173, 1) 0%, rgba(190, 197, 177, 1) 50%, rgba(211, 211, 173, 1) 100%);*/
        
@@ -26,7 +28,7 @@
     }
     
     .devanagari-text {
-               font-family: 'Tiro Devanagari Hindi', sans-serif;
+               font-family: 'Tiro Devanagari Hindi', 'Noto Sans Devanagari', sans-serif;
                font-size: 1rem; /* Adjust as needed */
            }
 
@@ -57,11 +59,11 @@
 
     .logo a {
 		font-family: 'Playwrite PL', cursive;		
-		font-size: 1.8rem !important;
+		font-size: 2rem !important;
 		font-weight: 400;
 		margin-left: 0;	
-		color: #e7c078ff !important;
-		text-shadow: 1px 1px 2px #000;
+		color: #AA6255 !important;
+		/*text-shadow: 1px 1px 2px #000;*/
 		text-decoration: none;
 		
 		
@@ -82,7 +84,7 @@
 
     .menu a {
       text-decoration: none;
-      color: #e9505f !important;
+      color: #FFF !important;
       padding: 0.1rem 0.75rem;
       border-radius: 0;
       display: inline-block;
@@ -103,6 +105,7 @@
 	min-height: 100vh; /* Fill full viewport height */
 	border-radius: 0;   /* No rounded edges */
 	box-sizing: border-box;
+	color: #333333 !important; /* or any color you prefer */
 }
 
     .dropdown {
@@ -854,4 +857,99 @@ li.has-dropdown {
   pointer-events: auto;
   /* other styling */
 }
+
+.page-footer {
+  width: 100%;
+  background: transparent;
+  backdrop-filter: blur(8px);
+  padding: 1rem;
+  text-align: center;
+  color: #333; /* Change to match your theme */
+  font-size: 1rem;
+}
+
+.page-footer p {
+  margin: 0;
+}
+
+.social-links {
+  display: flex;
+  gap: 0; /* remove spacing */
+  justify-content: center; /* centers icons horizontally */
+  align-items: center; 
+}
+
+.social-links a {
+  display: block;
+}
+
+
+.social-links img {
+  width: 3.5rem;       /* 64px */
+  height: 3.5rem;      /* 64px */
+  margin: 0 1.6rem; /* 30px */
+  vertical-align: middle;
+  transition: transform 0.2s ease;
+}
+.social-links img:hover {
+  transform: scale(1.1); /* small zoom effect on hover */
+}
+
+.social-links {
+  font-size: 0;
+}
+
+.social-links a {
+  font-size: initial; /* restore normal font size for child elements */
+}
+
+.social-links {
+  list-style: none;
+}
+
+.social-links2 {
+  display: flex;
+  gap: 0; /* remove spacing */
+  justify-content: center; /* centers icons horizontally */
+  align-items: center; 
+}
+
+.social-links2 a {
+  display: block;
+}
+
+
+.social-links2 img {
+  width: 15rem;       /* 64px */
+  height: auto;      /* 64px */
+  margin: 0.1rem 0rem; /* 30px */
+  vertical-align: middle;
+  transition: transform 0.2s ease;
+}
+.social-links2 img:hover {
+  transform: scale(1.1); /* small zoom effect on hover */
+}
+
+.social-links2 {
+  font-size: 0;
+}
+
+.social-links2 a {
+  font-size: initial; /* restore normal font size for child elements */
+}
+
+.social-links2 {
+  list-style: none;
+}
+
+
+
+.contact-info {
+  display: inline-block;  /* shrink to fit content */
+  text-align: left;       /* keep text left-aligned */
+  margin: 0 auto;         /* center the block */
+  font-size: 1.2rem;     /* increase text size (20px) */
+}
+
+
 
