@@ -941,11 +941,9 @@ li.has-dropdown {
   list-style: none;
 }
 
-
-
 .contact-info {
   display: inline-block;  /* shrink to fit content */
-  text-align: left;       /* keep text left-aligned */
+  text-align: center;       /* keep text left-aligned */
   margin: 0 auto;         /* center the block */
   font-size: 1.2rem;     /* increase text size (20px) */
 }
