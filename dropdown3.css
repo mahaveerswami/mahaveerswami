@@ -860,12 +860,11 @@ li.has-dropdown {
 
 .page-footer {
   width: 100%;
-  background: transparent;
-  backdrop-filter: blur(8px);
   padding: 1rem;
   text-align: center;
-  color: #333; /* Change to match your theme */
+  color: #333;
   font-size: 1rem;
+  background: none;
 }
 
 .page-footer p {
