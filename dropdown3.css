@@ -884,8 +884,8 @@ li.has-dropdown {
 
 
 .social-links img {
-  width: 3.5rem;       /* 64px */
-  height: 3.5rem;      /* 64px */
+  width: 2.8rem;       /* 64px */
+  height: 2.8rem;      /* 64px */
   margin: 0 1.6rem; /* 30px */
   vertical-align: middle;
   transition: transform 0.2s ease;
@@ -919,7 +919,7 @@ li.has-dropdown {
 
 
 .social-links2 img {
-  width: 15rem;       /* 64px */
+  width: 12rem;       /* 64px */
   height: auto;      /* 64px */
   margin: 0.1rem 0rem; /* 30px */
   vertical-align: middle;
