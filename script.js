@@ -1,7 +1,5 @@
 document.addEventListener("DOMContentLoaded", function () {
-  /* -------------------------
-     Auto-adjust body padding to match nav height
-  ------------------------- */
+  
   function setBodyPadding() {
     const nav = document.querySelector("nav");
     if (nav) {
@@ -11,9 +9,7 @@ document.addEventListener("DOMContentLoaded", function () {
   window.addEventListener("resize", setBodyPadding);
   setBodyPadding();
 
-  /* -------------------------
-     Toggle Mobile Menu
-  ------------------------- */
+  
   const menu = document.querySelector(".menu");
   const hamburger = document.querySelector(".hamburger");
 
@@ -21,9 +17,7 @@ document.addEventListener("DOMContentLoaded", function () {
     menu.classList.toggle("show");
   });
 
-  /* -------------------------
-     Navbar Dropdown Handling (Mobile Only)
-  ------------------------- */
+  
   const dropdownParents = document.querySelectorAll(".has-dropdown > a");
 
   dropdownParents.forEach(link => {
@@ -38,9 +32,7 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 
-  /* -------------------------
-     Lightbox Gallery (works on .myGallery and .grid)
-  ------------------------- */
+  
   const lightbox = document.getElementById("lightbox");
   const lightboxImg = document.getElementById("lightbox-image");
   const lightboxCaption = document.getElementById("lightbox-caption");
@@ -67,7 +59,7 @@ document.addEventListener("DOMContentLoaded", function () {
     lightbox.classList.add("lightbox-show");
   }
 
-  // Select all galleries with .myGallery or .grid classes
+  
   const galleries = document.querySelectorAll(".myGallery, .grid");
   galleries.forEach(gallery => {
     const galleryImages = gallery.querySelectorAll(".lightbox-img");
@@ -100,9 +92,7 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   });
 
-  /* -------------------------
-     Swipe Support for Mobile
-  ------------------------- */
+  
   let touchStartX = 0;
   let touchEndX = 0;
 
@@ -123,25 +113,21 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   });
 
-  /* -------------------------
-     Scroll Effect (Optional)
-  ------------------------- */
+  
   window.addEventListener('scroll', () => {
     document.body.classList.toggle('scrolled', window.scrollY > 20);
   });
 });
 
-/* -------------------------
-   Force repaint/reflow on window load to fix initial overflow
-------------------------- */
+
 window.addEventListener('load', () => {
-  // Force repaint by toggling a transform property
+  
   document.body.style.transform = 'translateZ(0)';
   setTimeout(() => {
     document.body.style.transform = '';
   }, 50);
 
-  // Recalculate body padding after everything loads (with slight delay)
+ 
   setTimeout(() => {
     const nav = document.querySelector("nav");
     if (nav) {
